@@ -25,6 +25,10 @@ int main(int argc, char *argv[])
         }
     }
 
+    if (DWM != S_OK) {
+        return 1;
+    }
+
     if (!console) {
         FreeConsole();
     }
